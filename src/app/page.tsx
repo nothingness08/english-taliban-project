@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/page.module.css";
 import Game from "../app/game";
 
@@ -8,15 +8,33 @@ export default function Home() {
   const [page, setPage] = useState(0);
   const [site, setSite] = useState(true);
   const [message, setMessage] = useState("");
+  const [restartButton, setRestartButton] = useState(false);
 
   function handlePageClick(page: number){
     setPage(page);
   }
 
+  function restartClick(){
+    switchSite();
+    setRestartButton(false);
+  }
+
   function switchSite(text: string = ""){
     setSite(!site);
+    if(text !== ""){
+      setRestartButton(false);
+    }
     setMessage(text);
   }
+
+   useEffect(() => {
+    if (message !== "") {
+      const timer = setTimeout(() => {
+        setRestartButton(true);
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [message]); 
 
   const renderContent = () => {
     switch(page){
@@ -50,7 +68,12 @@ export default function Home() {
     else{
       return(
         <div className={styles.fullScreen}>
-           <div className={styles.fadeText}>{message}</div>
+          <div className={styles.fadeText}>{message}</div>
+          <button 
+            className={`${styles.fadeButton} ${restartButton ? styles.visible : styles.hidden}`}
+            onClick={() => restartClick()}>
+            Restart
+          </button>
         </div>
       );
     }

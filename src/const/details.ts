@@ -4,7 +4,8 @@ export const endings: Array<string> = [
     "You stepped on a landmine",
     "You were hit by a stray bullet",
     "You were executed for being un-Islamic",
-    "You are a social outcast"
+    "You are a social outcast",
+    "You joined The Taliban"
 ]
 
 export const questions: Array<question> = [
