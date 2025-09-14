@@ -9,7 +9,7 @@ export const endings: Array<string> = [
 
 export const questions: Array<question> = [
     {
-        prompt: "Do you have disabilities?",
+        prompt: "Do you have a disability?",
         answers: ["Yes", "No"],
         percentages: [[5, 10, 40, 70], [5, 10, 0, 0]]
     },
@@ -31,7 +31,7 @@ export const questions: Array<question> = [
     {
         prompt: "What gender are you?",
         answers: ["Male", "Female", "Other"],
-        percentages: [[5, 10, 0, 0], [5, 10, 0, 0], [5, 10, 60, 90]]    
+        percentages: [[5, 10, 0, 0], [5, 10, 0, 0], [5, 10, 40, 80]]    
     },
     {
         prompt: "Are you married?",

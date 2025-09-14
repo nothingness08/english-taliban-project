@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "../styles/game.module.css";
 import { questions, endings }from "../const/details";
 
-export default function Game(){
+export default function Game({switchSite}: any){
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
     function onAnswer(){
@@ -11,6 +11,7 @@ export default function Game(){
         }
         let newCurrentQuestion = currentQuestion + 1;
         setCurrentQuestion(newCurrentQuestion);
+        switchSite("YOU DIED");
     }
     return(
     <div className={styles.questionContainer}>
