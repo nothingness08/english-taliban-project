@@ -34,3 +34,35 @@
   border-color: #888;
   background-color: #f9f9f9;
 }
+
+.explanationButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #6e6e6e;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 20px;
+  background-color: #acacac;
+  color: #000;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.explanationButton:hover {
+  border-color: #888;
+  background-color: #f9f9f9;
+}
+
+.textBody {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #6e6e6e;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 30px;
+  background-color: #acacac;
+  color: #000;
+}
