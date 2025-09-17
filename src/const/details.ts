@@ -77,8 +77,8 @@ export const currentEvents: Array<string> = [
     In response, the UN deployed support for “8.2 million people [in the form of] life-saving and life-sustaining food assistance”. 
     This has been worsened by Global Warming, which contributes to stronger and more frequent natural disasters and more extreme weather that destroys crops. `,
 
-    `Additionally, the economy in Afghanistan under the Taliban is on the verge of collapse. Without a central government, banks have no backing or support, leading to less money flow and a slower economy. 
-    Inflation is also rising, decreasing the spending power of average citizens. 
+    `Additionally, the economy in Afghanistan under the Taliban is on the verge of collapse. 
+    Without a stable government, inflation is rising, decreasing the spending power of average citizens. 
     Because of the Taliban’s violent and radical nature, many countries have imposed sanctions on Afghanistan and not recognized it formally as a nation; 
     this makes it impossible to trade or receive financial relief, further crippling the economy.`
 ]
@@ -108,6 +108,8 @@ export const kiteRunner: Array<string> = [
     Because of the fear of the Taliban and Hassan being Hazara, no one stood up to the Taliban members who claimed they had acted in self-defence.`,
 
     `When Amir returns to Kabul, a Taliban vehicle passes by him, and a beggar describes them as a pack of dogs, waiting to be provoked so that they can lash out with violence, and when nobody offends them, they resort to random acts of violence. 
-    When Amir tries to retrieve Sohrab, Hassan’s son, he encounters his childhood bully, Assef, who joined the Taliban, and has to fight him to gain his freedom.`,
+    When Amir tries to retrieve Sohrab, Hassan’s son, he encounters his childhood bully, Assef, who joined the Taliban, and has to fight him to gain his freedom.
+    After Amir leaves Afghanistan, the Taliban becomes a symbol of how the places and people he held dear during childhood are no longer the same, 
+    and he must confront those changes as he seeks to right the wrongs of the past by finding Sohrab`,
 ]
 
