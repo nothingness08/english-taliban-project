@@ -134,7 +134,7 @@ export default function Home() {
         return(
           <div>
           <div className={styles.pageHeader}>Sources</div>
-            <div className={styles.textBody}>
+            <div className={styles.textBody} style={{fontSize: '20px'}}>
               https://www.cfr.org/backgrounder/taliban-afghanistan
               https://www.britannica.com/topic/Taliban
               https://www.dni.gov/nctc/groups/afghan_taliban.html
