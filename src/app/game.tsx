@@ -21,16 +21,17 @@ export default function Game({switchSite}: any){
 
     function onAnswer(idx: number){
         if(currentQuestion === questions.length -1){
-            switchSite(endings[4]);
-            return;
+          switchSite(endings[4]);
+          return;
         }
         let num = probabilities(questions[currentQuestion].percentages[idx]);
         if(num || num ===0){
-            switchSite(endings[num]);
+          switchSite(endings[num]);
         }
         else{
-            let newCurrentQuestion = currentQuestion + 1;
-            setCurrentQuestion(newCurrentQuestion);
+          let newCurrentQuestion = currentQuestion + 1;
+          if(questions[currentQuestion].skip[idx]){newCurrentQuestion++};
+          setCurrentQuestion(newCurrentQuestion);
         }
     }
 
