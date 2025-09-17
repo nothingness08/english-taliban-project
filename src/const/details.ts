@@ -46,9 +46,9 @@ export const questions: Array<question> = [
         skip: [false, false],    
     },
     {
-        prompt: "Are you married?",
+        prompt: "Should Women Vote?",
         answers: ["Yes", "No"],
-        percentages: [[5, 10, 0, 0], [5, 10, 0, 0]],
+        percentages: [[5, 10, 50, 80], [5, 10, 0, 0]],
         skip: [false, false],    
     },
     {
