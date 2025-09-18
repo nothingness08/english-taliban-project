@@ -156,7 +156,7 @@ export default function Home() {
   const renderSite = () => {
     if(site){
       return (
-        <div>
+        <div style={{backgroundColor: '#000000ff'}}>
           <div className={styles.title}>The Taliban</div>
           <div className={styles.menuContainer}>
             <button className={styles.menuButton} onClick={() => handlePageClick(0)}>Home</button>
